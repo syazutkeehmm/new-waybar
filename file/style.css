@@ -1,0 +1,92 @@
+
+/* ==================================
+   WAYBAR - GLOBAL STYLE
+   ================================== */
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    min-height: 0;
+}
+
+/* MAIN BAR */
+
+window#waybar {
+    background: rgba(20, 20, 25, 0.85);
+    color: #ffffff;
+}
+
+/* ==================================
+   LEFT MODULES
+   ================================== */
+
+#custom-launcher {
+    padding: 0 14px;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+#workspaces {
+    padding: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 7px;
+    color: #888888;
+    background: transparent;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background: #555555;
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+    background: #444444;
+}
+
+/* ==================================
+   CENTER MODULES
+   ================================== */
+
+#clock {
+    padding: 0 15px;
+    color: #ffffff;
+}
+
+/* ==================================
+   RIGHT MODULES
+   ================================== */
+
+#tray,
+#network,
+#pulseaudio,
+#battery,
+#custom-power {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#custom-power {
+    font-size: 17px;
+    color: #ff7777;
+    padding-right: 16px;
+}
+
+/* ==================================
+   HOVER EFFECTS
+   ================================== */
+
+#custom-launcher:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-power:hover {
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 8px;
+}
